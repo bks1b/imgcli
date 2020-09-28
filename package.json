@@ -1,0 +1,28 @@
+{
+  "name": "imgcli",
+  "version": "1.0.0",
+  "description": "An image manipulation command line interface.",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "lint": "eslint **/**.ts --fix",
+    "readme": "tsc && node dist/readme/readme"
+  },
+  "author": "bks1b",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "canvas": "^2.6.1",
+    "chalk": "^4.1.0",
+    "jimp": "^0.16.1",
+    "node-pre-gyp": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "typescript": "^4.0.2"
+  },
+  "bin": {
+    "img": "./dist/src/index.js"
+  }
+}
